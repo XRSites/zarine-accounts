@@ -1,4 +1,4 @@
-package br.com.xrsites.zarineerp;
+package br.com.xrsites.zarineaccounts;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
