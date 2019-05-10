@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.xrsites</groupId>
-	<artifactId>zarine-erp</artifactId>
+	<artifactId>zarine-accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>zarine-erp</name>
-	<description>Demo project for Spring Boot</description>
+	<name>zarine-accounts</name>
+	<description>Simple OAuth Autentication</description>
 
 	<properties>
 		<java.version>1.8</java.version>
