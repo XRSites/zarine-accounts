@@ -17,6 +17,13 @@ spring:
       oauth2:
         client:
           registration:
+            github:
+              clientId: 5e6fa0b4feded95eb8c1
+              clientSecret: 4c55efd00db0247cd12f7d050453cf3fb128d84b
+              redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
+              scope:
+                - user:email
+                - read:user
             mercadolibre:
               clientId: 4545636532443454
               clientSecret: DVC92Lhm3EVh66IALxIEYQzUYwM3y9EZ
