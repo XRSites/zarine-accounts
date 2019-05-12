@@ -30,10 +30,7 @@ spring:
               authorizationGrantType: authorization_code
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
               clientAuthenticationMethod: post
-              scope:
-                - read
-                - write
-                - offline_access
+              scope: read,write,offline_access
           provider:
             mercadolibre:
               authorization-uri: https://auth.mercadolivre.com.br/authorization
