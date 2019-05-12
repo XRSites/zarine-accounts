@@ -29,6 +29,7 @@ spring:
               clientSecret: DVC92Lhm3EVh66IALxIEYQzUYwM3y9EZ
               authorizationGrantType: authorization_code
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
+              clientAuthenticationMethod: post
               scope:
                 - read
                 - write
@@ -38,6 +39,7 @@ spring:
               authorization-uri: https://auth.mercadolivre.com.br/authorization
               token-uri: https://api.mercadolibre.com/oauth/token
               user-info-uri: https://api.mercadolibre.com/users/me
+              user-info-authentication-method: form
               user-name-attribute: nickname
 
 app:
