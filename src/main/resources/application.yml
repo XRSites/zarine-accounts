@@ -47,3 +47,8 @@ app:
       - https://zarine-accounts.herokuapp.com/oauth2/redirect
       - myandroidapp://oauth2/redirect
       - myiosapp://oauth2/redirect
+
+logging:
+  level: 
+    root: WARN
+    br.com.xrsites: TRACE
