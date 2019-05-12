@@ -27,7 +27,9 @@ public class OAuth2AuthenticationFailureHandler extends SimpleUrlAuthenticationF
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
     	
-    	log.debug("Login unsucessful", request.getRequestURL(), response.getStatus(), exception);
+    	log.debug("Login unsucessful", request.getRequestURL());
+    	log.debug("Login unsucessful", response.getStatus());
+    	log.debug("Login unsucessful", exception);
     	
         String targetUrl = CookieUtils.getCookie(request, REDIRECT_URI_PARAM_COOKIE_NAME)
                 .map(Cookie::getValue)
