@@ -28,8 +28,8 @@ spring:
                 - offline_access
           provider:
             mercadolibre:
-              authorization-uri: https://auth.mercadolivre.com.br/oauth/authorization
-              token-uri: https://auth.mercadolivre.com.br/oauth/token
+              authorization-uri: https://auth.mercadolivre.com.br/authorization
+              token-uri: https://api.mercadolibre.com/oauth/token
               user-info-uri: https://api.mercadolibre.com.br/users/me
               user-name-attribute: nickname
 
