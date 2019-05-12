@@ -20,7 +20,7 @@ spring:
             mercadolibre:
               clientId: 4545636532443454
               clientSecret: DVC92Lhm3EVh66IALxIEYQzUYwM3y9EZ
-              authorizationGrantType: accessCode
+              authorizationGrantType: authorization_code
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - read
