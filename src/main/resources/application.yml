@@ -29,7 +29,7 @@ spring:
           provider:
             mercadolibre:
               authorization-uri: https://auth.mercadolivre.com.br/authorization
-              token-uri: https://auth.mercadolivre.com.br/oauth/token
+              token-uri: https://api.mercadolibre.com/oauth/token
               user-info-uri: https://api.mercadolibre.com.br/users/me
               user-name-attribute: nickname
 
