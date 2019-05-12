@@ -20,12 +20,12 @@ spring:
             mercadolibre:
               clientId: 4545636532443454
               clientSecret: DVC92Lhm3EVh66IALxIEYQzUYwM3y9EZ
-              authorizationGrantType: authorization_code
+              authorizationGrantType: accessCode
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - read
                 - write
-                - offline access
+                - offline_access
           provider:
             mercadolibre:
               authorization-uri: https://auth.mercadolivre.com.br/oauth/authorization
