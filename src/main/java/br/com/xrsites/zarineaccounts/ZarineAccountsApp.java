@@ -8,10 +8,10 @@ import br.com.xrsites.zarineaccounts.config.AppProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
-public class ZarineErpApplication {
+public class ZarineAccountsApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZarineErpApplication.class, args);
+		SpringApplication.run(ZarineAccountsApp.class, args);
 	}
 
 }
