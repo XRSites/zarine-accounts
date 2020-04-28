@@ -1,8 +1,8 @@
 spring:
     datasource:
-        url: *************
-        username: *******
-        password: *******
+        url: ${MYSQL_DATA_SOURCE}
+        username: ${MYSQL_USER}
+        password: ${MYSQL_PWD}
 
     jpa:
         show-sql: true
@@ -18,15 +18,15 @@ spring:
         client:
           registration:
             github:
-              clientId: 5e6fa0b4feded95eb8c1
-              clientSecret: 4c55efd00db0247cd12f7d050453cf3fb128d84b
+              clientId: ${GITHUB_CLIENT_ID}
+              clientSecret: ${GITHUB_CLIENT_SECRET}
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - user:email
                 - read:user
             mercadolibre:
-              clientId: ****************
-              clientSecret: *********************
+              clientId: ${MELI_CLIENT_ID}
+              clientSecret: ${MELI_CLIENT_SECRET}
               authorizationGrantType: authorization_code
               redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
               clientAuthenticationMethod: post
@@ -41,7 +41,7 @@ spring:
 
 app:
   auth:
-    tokenSecret: ******************
+    tokenSecret: ${JWT_TOKEN_SECRET}
     tokenExpirationMsec: 864000000
   oauth2:
     # After successfully authenticating with the OAuth2 Provider,
