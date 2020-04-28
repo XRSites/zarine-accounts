@@ -1,6 +1,6 @@
 spring:
     datasource:
-        url: jdbc:mysql://zarine.com.br:3306/zarinebr_hive?useSSL=false
+        url: *************
         username: *******
         password: *******
 
